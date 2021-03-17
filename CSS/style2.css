@@ -1,0 +1,456 @@
+/* !Importing font from google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #40514e;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	font-family: 'Merriweather', serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ! Utility Classes */
+.text-primary {
+	color: #11999e;
+}
+
+/* ! Navbar */
+#navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background: #444;
+	color: #66bfbf;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 0rem 0rem 0rem 2rem;
+}
+
+#navbar ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* ! This is only for form-submenu - START */
+
+#navbar .logo i {
+	padding-top: 10px;
+}
+
+#navbar ul li {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+#navbar li:hover .submenu > li {
+	display: block;
+	top: 0px;
+}
+
+.submenu li {
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+
+.submenu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+}
+
+.arrow {
+	margin-left: 8px;
+	color: #f4f4f4;
+	font-size: 12px;
+}
+/* ! This is only for form-submenu - END */
+
+#navbar ul li a {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background: #444;
+	text-decoration: none;
+	padding: 0.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* margin: 0 0.25rem; */
+}
+
+#navbar ul li a:hover {
+	background: #66bfbf;
+}
+/* 
+.top-container h1 {
+	font-size: 3.625rem;
+	color: #66bfbf;
+	font-family: 'Montserrat', sans-serif;
+	margin: 50px auto 0 auto;
+} */
+/* 
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #66bfbf;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #11999e;
+}
+
+hr {
+	border: dotted #eaf6f6 6px;
+	border-bottom: none;
+	width: 5%;
+	margin: 50px auto;
+}
+
+.main-img {
+	padding-bottom: 30px;
+} */
+
+.top-container {
+	background-color: #e4f9f5;
+	position: relative;
+	padding-top: 20px;
+}
+
+.middle-container {
+	font-size: 14px;
+}
+
+.bottom-container {
+	background-color: #66bfbf;
+	margin-bottom: 0px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: ' ';
+	display: block;
+}
+
+.clearfix::after {
+	clear: both;
+}
+/* !This clear works for modern browser */
+.clearfix {
+	*zoom: 1;
+}
+
+.skill-row {
+	width: 50%;
+	margin: 50px auto 50px auto;
+	text-align: left;
+	text-justify: inter-world;
+	line-height: 1.5;
+}
+
+.intro {
+	width: 50%;
+	margin: auto;
+	line-height: 1.5;
+}
+
+.contact-message {
+	width: 50%;
+	margin: 20px auto 30px;
+}
+
+.top-cloud {
+	position: absolute;
+	right: 300px;
+	top: 50px;
+}
+
+.bottom-cloud {
+	position: absolute;
+	left: 300px;
+	bottom: 300px;
+}
+
+.design1-img {
+	border-radius: 25%;
+	background-color: #66bfbf;
+	padding: 20px;
+	width: 25%;
+	float: left;
+	margin-right: 30px;
+}
+
+.design2-img {
+	border-radius: 25%;
+	background-color: #66bfbf;
+	padding: 20px;
+	width: 25%;
+	float: right;
+	margin-left: 30px;
+}
+
+.design3-img {
+	border-radius: 25%;
+	background-color: #66bfbf;
+	padding: 20px;
+	width: 25%;
+	float: left;
+	margin-right: 30px;
+}
+
+.skills,
+.skills-row {
+	overflow: auto;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background-color: #11999e;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.btn:hover {
+	background: #66bfbf;
+	color: #eaf6f6;
+	border: 1px solid #11999e;
+	cursor: pointer;
+}
+
+.footer-link {
+	color: #11999e;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 10px 20px;
+}
+
+.footer-link:hover {
+	color: #fff;
+}
+.copyright {
+	font-family: 'Montserrat', sans-serif;
+	color: #eaf6f6;
+	font-size: 0.75rem;
+	padding: 0;
+	margin: 0;
+}
+
+/* ! Additional CSS */
+/* !From EL  */
+/* ::placeholder {
+	color: #444;
+	opacity: 0.4;
+} */
+/* ! Utilities Classes */
+/* .container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 2rem;
+	overflow: hidden;
+} */
+
+/* !Section: Clients */
+/* #clients .items {
+	display: flex;
+} */
+
+/* #clients .items img {
+	display: block;
+	margin: auto;
+	width: 50%;
+} */
+/* 
+.bg-light {
+	background: #f4f4f4;
+	color: #333;
+}
+
+.py-1 {
+	padding: 1.5rem 0;
+}
+.py-2 {
+	padding: 2rem 0;
+}
+.py-3 {
+	padding: 3rem 0;
+}
+.p-1 {
+	padding: 1.5rem;
+}
+.p-2 {
+	padding: 2rem;
+}
+.p-3 {
+	padding: 3rem;
+} */
+/* 
+.m-heading {
+	font-size: 2rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+} */
+/* 
+.m-heading-2 {
+	color: #0a5d60;
+	font-size: 2rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+} */
+
+/* ! Animation & Transition*/
+/* .items img {
+	transition: all 1s ease-in-out;
+}
+
+.items img:hover {
+	background-color: #66bfbf;
+	border-radius: 50%;
+	border-color: #66bfbf;
+	transform: scale(1.5);
+} */
+
+/* !Form Input Icons  */
+/* .input-icons i {
+	position: absolute;
+} */
+/* 
+.icon {
+	padding: 5px;
+	color: #66bfbf;
+	min-width: 50px;
+	text-align: center;
+} */
+
+/* !Form Input Icons  */
+/* .input-icons i {
+	position: absolute;
+} */
+
+/* .icon {
+	padding: 10px;
+	color: #66bfbf;
+	min-width: 50px;
+	text-align: center;
+} */
+/* 
+.input-field {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+} */
+/* 
+.input-field2 {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+} */
+
+/* ! Section: Contact Us */
+/* #contact {
+	display: flex;
+} */
+/* 
+#contact #mapid,
+#contact .contact-form {
+	flex: 1;
+} */
+/* 
+#contact .contact-form .form-group {
+	margin: 0.75rem;
+} */
+/* 
+#contact .contact-form label {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	text-align: left;
+} */
+/* 
+#contact .contact-form .input-field,
+#contact .contact-form textarea {
+	width: 100%;
+	border: 1px #ddd solid;
+	padding: 0.5rem;
+	font-family: 'Roboto', sans-serif;
+} */
+/* 
+#contact .contact-form textarea {
+	height: 150px;
+	text-align: left;
+	text-indent: 35px;
+	background-color: #f4f4f4;
+} */
+/* 
+#contact .contact-form .input-field:focus,
+#contact .contact-form textarea:focus {
+	outline: none;
+	border-color: #11999e;
+} */
+
+.btn2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	background: #66bfbf;
+	padding: 0.75rem 5rem;
+	border: none;
+	border-radius: 5px;
+	transition: 0.3s ease background-color;
+}
+
+.btn2:hover {
+	background: #0a5d60;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* ! leaflet Map */
+#mapid {
+	height: auto;
+}
+
+/* ! CSS For Success Page */
+.bg-primary {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: #439a9e;
+	color: #f4f4f4;
+}
+
+.l-heading {
+	font-size: 1.4rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+	padding: 0.5rem;
+}
+
+.p-lead {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}

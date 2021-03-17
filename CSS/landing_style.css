@@ -1,0 +1,116 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #40514e;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: ;
+}
+/* ! I've used showcase here -PART A1 */
+#showcase {
+	background: #333 url('../IMG6/aral-tasher-vWsubsaym3o-unsplash.jpg') no-repeat
+		center center/cover;
+	font-size: 1rem;
+	color: #66bfbf;
+	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Sacramento', cursive; */
+	height: 100vh;
+	text-align: center;
+	padding: 2rem;
+	padding-top: 22rem;
+}
+
+/* ! Beginning of showcase - PART A1 */
+#showcase .showcase-content {
+	/* align-self: center;
+	width: 800px; */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 2rem;
+	/* ! Overlay */
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+/* ! End of showcase - PART A1 */
+
+/* ! I've used showcase here -PART A2 */
+#showcase .showcase-content h1 {
+	color: #66bfbf;
+	text-shadow: 1px 1px 2px black, 0 0 25px #66bfbf, 0 0 5px #11999e;
+	font-size: 3rem;
+}
+
+#showcase .showcase-content p {
+	margin: 1rem 0 3rem 0;
+	color: #fff;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-size: 1.3rem;
+}
+/* ! End of showcase - PART A2 */
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: #545454;
+	font-weight: bold;
+	background-color: #66bfbf;
+	border: none;
+	/* border-radius: 5px; */
+	padding: 0.75rem 2rem;
+}
+
+.btn:hover {
+	background: #11999e;
+	color: #eaf6f6;
+	cursor: pointer;
+}
+
+@media (max-height: 450px) {
+	header {
+		padding-top: 5rem;
+	}
+}
+
+.bottom-container {
+	background-color: #66bfbf;
+	margin-bottom: 0px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.btn:hover {
+	color: #eaf6f6;
+	cursor: pointer;
+}
+
+.footer-link {
+	color: #11999e;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 10px 20px;
+}
+
+.footer-link:hover {
+	color: #fff;
+}
+.copyright {
+	font-family: 'Montserrat', sans-serif;
+	color: #eaf6f6;
+	font-size: 0.75rem;
+	padding: 0;
+	margin: 0;
+}
